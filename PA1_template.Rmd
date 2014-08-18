@@ -79,11 +79,13 @@ oridata$interval[which(interval_steps==max(interval_steps))]
 sum(is.na(oridata))
 
 #2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
-#use the mean for that 5-minute interval to fill the missing values
+#strategy:use the mean for that 5-minute interval to fill the missing values
+
 #3. Create a new dataset that is equal to the original dataset but with the missing data filled in.
+
 extract <- seq(n1,nrow(oridata),n1)
 extract <- extract-287
-
+#strategy:use the mean for that 5-minute interval to fill the missing values
 no_Na_Data <- oridata
 for (i in 1:n1){    
     nas <- is.na(no_Na_Data$steps[extract])
