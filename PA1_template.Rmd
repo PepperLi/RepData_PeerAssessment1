@@ -121,6 +121,7 @@ median2
 # Make comparison
 mean1 - mean2
 median1 - median2
+# the dataset with the NA's filled in appeared more like a normal distribution
 
 ```
 
